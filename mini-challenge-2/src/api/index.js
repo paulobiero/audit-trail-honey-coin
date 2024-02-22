@@ -12,7 +12,7 @@ router.get("/ping", (req, res) => {
 router.get("/transactions/:id", async (req, res) => {
   let userId=req.params.id;
 //  let currency_conversion=await getCurrencyConversion({from:sender_details.fromcurrency,to:receiver_details.tocurrency})
-  let query_strip_auth = `SELECT transactionid, transactiontype, userid, fulltimestamp, status, senderamount, receiveramount, sendercurrency, receivercurrency, senderid, receiverid FROM audit_trail.transactions where userid=${userId}`;
+  let query_strip_auth = `SELECT transactionid, transactiontype, userid, fulltimestamp, status, senderamount, receiveramount, sendercurrency, receivercurrency, senderid, receiverid FROM public.transactions where userid=${userId}`;
   client.connect()
       .then(() => {
         console.log('Connected to PostgreSQL database');
