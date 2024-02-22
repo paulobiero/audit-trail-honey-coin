@@ -1,0 +1,12 @@
+{
+  "name": "backend-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd mini-challenge-2 && npm run build",
+    "start": "cd mini-challenge-2 && npm run start",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.5"
+  }
+}
