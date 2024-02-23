@@ -41,7 +41,7 @@ If its insufficient we update it as incomplete
 
 #### Step 5
 Finally we update the transaction on the users table on both the sender and receiver
-on the sender side we update it as below with the amount set as a negative but on the receiver side we put the amount as positive
+on the sender side we update it as below with the amount set as a negative but on the receiver side we put the amount as positive,we make sure to use the conversion rate to update this in the case where the transaction invlolved different currencies
 ```sql
 UPDATE public.users SET balance = users.balance + ${amount} WHERE userid = ${userId}
 ```
