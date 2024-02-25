@@ -3,7 +3,7 @@ For this challenge i created a sample angular application to use the package.jso
 
 #### 1. Upgrade to the latest angular 17.2.1
 #### 2. Upgraded all the dependencies to be compatible with angular 17.2.1
-#### 3. Removed duplicate dependencies to make the application lighter ie firebase,crypto-js
+#### 3. Removed duplicate dependencies to make the application lighter ie firebase,crypto-js,apexcharts
 
 To test the implementation we first build the application using
 #### 1. run 
